@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C2800A01DEEBC9B00FC20A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C28009F1DEEBC9B00FC20A9 /* AppDelegate.swift */; };
+		2C2800A21DEEBC9B00FC20A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800A11DEEBC9B00FC20A9 /* ViewController.swift */; };
+		2C2800A51DEEBC9B00FC20A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2800A31DEEBC9B00FC20A9 /* Main.storyboard */; };
+		2C2800A71DEEBC9B00FC20A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2800A61DEEBC9B00FC20A9 /* Assets.xcassets */; };
+		2C2800AA1DEEBC9B00FC20A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2800A81DEEBC9B00FC20A9 /* LaunchScreen.storyboard */; };
+		2C2800B51DEEBC9B00FC20A9 /* AUSome_TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800B41DEEBC9B00FC20A9 /* AUSome_TrackingTests.swift */; };
+		2C2800C01DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800BF1DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C2800B11DEEBC9B00FC20A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C2800941DEEBC9B00FC20A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C28009B1DEEBC9B00FC20A9;
+			remoteInfo = "AUSome Tracking";
+		};
+		2C2800BC1DEEBC9B00FC20A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C2800941DEEBC9B00FC20A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C28009B1DEEBC9B00FC20A9;
+			remoteInfo = "AUSome Tracking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C28009C1DEEBC9B00FC20A9 /* AUSome Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AUSome Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C28009F1DEEBC9B00FC20A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C2800A11DEEBC9B00FC20A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C2800A41DEEBC9B00FC20A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C2800A61DEEBC9B00FC20A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C2800A91DEEBC9B00FC20A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C2800AB1DEEBC9B00FC20A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2800B01DEEBC9B00FC20A9 /* AUSome TrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AUSome TrackingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2800B41DEEBC9B00FC20A9 /* AUSome_TrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUSome_TrackingTests.swift; sourceTree = "<group>"; };
+		2C2800B61DEEBC9B00FC20A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2800BB1DEEBC9B00FC20A9 /* AUSome TrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AUSome TrackingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2800BF1DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUSome_TrackingUITests.swift; sourceTree = "<group>"; };
+		2C2800C11DEEBC9B00FC20A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C2800991DEEBC9B00FC20A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2800AD1DEEBC9B00FC20A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2800B81DEEBC9B00FC20A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C2800931DEEBC9B00FC20A9 = {
+			isa = PBXGroup;
+			children = (
+				2C28009E1DEEBC9B00FC20A9 /* AUSome Tracking */,
+				2C2800B31DEEBC9B00FC20A9 /* AUSome TrackingTests */,
+				2C2800BE1DEEBC9B00FC20A9 /* AUSome TrackingUITests */,
+				2C28009D1DEEBC9B00FC20A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C28009D1DEEBC9B00FC20A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C28009C1DEEBC9B00FC20A9 /* AUSome Tracking.app */,
+				2C2800B01DEEBC9B00FC20A9 /* AUSome TrackingTests.xctest */,
+				2C2800BB1DEEBC9B00FC20A9 /* AUSome TrackingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C28009E1DEEBC9B00FC20A9 /* AUSome Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				2C28009F1DEEBC9B00FC20A9 /* AppDelegate.swift */,
+				2C2800A11DEEBC9B00FC20A9 /* ViewController.swift */,
+				2C2800A31DEEBC9B00FC20A9 /* Main.storyboard */,
+				2C2800A61DEEBC9B00FC20A9 /* Assets.xcassets */,
+				2C2800A81DEEBC9B00FC20A9 /* LaunchScreen.storyboard */,
+				2C2800AB1DEEBC9B00FC20A9 /* Info.plist */,
+			);
+			path = "AUSome Tracking";
+			sourceTree = "<group>";
+		};
+		2C2800B31DEEBC9B00FC20A9 /* AUSome TrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C2800B41DEEBC9B00FC20A9 /* AUSome_TrackingTests.swift */,
+				2C2800B61DEEBC9B00FC20A9 /* Info.plist */,
+			);
+			path = "AUSome TrackingTests";
+			sourceTree = "<group>";
+		};
+		2C2800BE1DEEBC9B00FC20A9 /* AUSome TrackingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C2800BF1DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift */,
+				2C2800C11DEEBC9B00FC20A9 /* Info.plist */,
+			);
+			path = "AUSome TrackingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C28009B1DEEBC9B00FC20A9 /* AUSome Tracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2800C41DEEBC9B00FC20A9 /* Build configuration list for PBXNativeTarget "AUSome Tracking" */;
+			buildPhases = (
+				2C2800981DEEBC9B00FC20A9 /* Sources */,
+				2C2800991DEEBC9B00FC20A9 /* Frameworks */,
+				2C28009A1DEEBC9B00FC20A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AUSome Tracking";
+			productName = "AUSome Tracking";
+			productReference = 2C28009C1DEEBC9B00FC20A9 /* AUSome Tracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C2800AF1DEEBC9B00FC20A9 /* AUSome TrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2800C71DEEBC9B00FC20A9 /* Build configuration list for PBXNativeTarget "AUSome TrackingTests" */;
+			buildPhases = (
+				2C2800AC1DEEBC9B00FC20A9 /* Sources */,
+				2C2800AD1DEEBC9B00FC20A9 /* Frameworks */,
+				2C2800AE1DEEBC9B00FC20A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C2800B21DEEBC9B00FC20A9 /* PBXTargetDependency */,
+			);
+			name = "AUSome TrackingTests";
+			productName = "AUSome TrackingTests";
+			productReference = 2C2800B01DEEBC9B00FC20A9 /* AUSome TrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C2800BA1DEEBC9B00FC20A9 /* AUSome TrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2800CA1DEEBC9B00FC20A9 /* Build configuration list for PBXNativeTarget "AUSome TrackingUITests" */;
+			buildPhases = (
+				2C2800B71DEEBC9B00FC20A9 /* Sources */,
+				2C2800B81DEEBC9B00FC20A9 /* Frameworks */,
+				2C2800B91DEEBC9B00FC20A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C2800BD1DEEBC9B00FC20A9 /* PBXTargetDependency */,
+			);
+			name = "AUSome TrackingUITests";
+			productName = "AUSome TrackingUITests";
+			productReference = 2C2800BB1DEEBC9B00FC20A9 /* AUSome TrackingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C2800941DEEBC9B00FC20A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Yan;
+				TargetAttributes = {
+					2C28009B1DEEBC9B00FC20A9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8QLRQ9DKAB;
+						ProvisioningStyle = Automatic;
+					};
+					2C2800AF1DEEBC9B00FC20A9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8QLRQ9DKAB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C28009B1DEEBC9B00FC20A9;
+					};
+					2C2800BA1DEEBC9B00FC20A9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8QLRQ9DKAB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C28009B1DEEBC9B00FC20A9;
+					};
+				};
+			};
+			buildConfigurationList = 2C2800971DEEBC9B00FC20A9 /* Build configuration list for PBXProject "AUSome Tracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C2800931DEEBC9B00FC20A9;
+			productRefGroup = 2C28009D1DEEBC9B00FC20A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C28009B1DEEBC9B00FC20A9 /* AUSome Tracking */,
+				2C2800AF1DEEBC9B00FC20A9 /* AUSome TrackingTests */,
+				2C2800BA1DEEBC9B00FC20A9 /* AUSome TrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C28009A1DEEBC9B00FC20A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2800AA1DEEBC9B00FC20A9 /* LaunchScreen.storyboard in Resources */,
+				2C2800A71DEEBC9B00FC20A9 /* Assets.xcassets in Resources */,
+				2C2800A51DEEBC9B00FC20A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2800AE1DEEBC9B00FC20A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2800B91DEEBC9B00FC20A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C2800981DEEBC9B00FC20A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2800A21DEEBC9B00FC20A9 /* ViewController.swift in Sources */,
+				2C2800A01DEEBC9B00FC20A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2800AC1DEEBC9B00FC20A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2800B51DEEBC9B00FC20A9 /* AUSome_TrackingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2800B71DEEBC9B00FC20A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2800C01DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C2800B21DEEBC9B00FC20A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C28009B1DEEBC9B00FC20A9 /* AUSome Tracking */;
+			targetProxy = 2C2800B11DEEBC9B00FC20A9 /* PBXContainerItemProxy */;
+		};
+		2C2800BD1DEEBC9B00FC20A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C28009B1DEEBC9B00FC20A9 /* AUSome Tracking */;
+			targetProxy = 2C2800BC1DEEBC9B00FC20A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C2800A31DEEBC9B00FC20A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2800A41DEEBC9B00FC20A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C2800A81DEEBC9B00FC20A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2800A91DEEBC9B00FC20A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C2800C21DEEBC9B00FC20A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C2800C31DEEBC9B00FC20A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C2800C51DEEBC9B00FC20A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8QLRQ9DKAB;
+				INFOPLIST_FILE = "AUSome Tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auburn-University.AUSome-Tracking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2C2800C61DEEBC9B00FC20A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8QLRQ9DKAB;
+				INFOPLIST_FILE = "AUSome Tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auburn-University.AUSome-Tracking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2C2800C81DEEBC9B00FC20A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8QLRQ9DKAB;
+				INFOPLIST_FILE = "AUSome TrackingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auburn-University.AUSome-TrackingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AUSome Tracking.app/AUSome Tracking";
+			};
+			name = Debug;
+		};
+		2C2800C91DEEBC9B00FC20A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8QLRQ9DKAB;
+				INFOPLIST_FILE = "AUSome TrackingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auburn-University.AUSome-TrackingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AUSome Tracking.app/AUSome Tracking";
+			};
+			name = Release;
+		};
+		2C2800CB1DEEBC9B00FC20A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8QLRQ9DKAB;
+				INFOPLIST_FILE = "AUSome TrackingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auburn-University.AUSome-TrackingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "AUSome Tracking";
+			};
+			name = Debug;
+		};
+		2C2800CC1DEEBC9B00FC20A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8QLRQ9DKAB;
+				INFOPLIST_FILE = "AUSome TrackingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Auburn-University.AUSome-TrackingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "AUSome Tracking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C2800971DEEBC9B00FC20A9 /* Build configuration list for PBXProject "AUSome Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2800C21DEEBC9B00FC20A9 /* Debug */,
+				2C2800C31DEEBC9B00FC20A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2800C41DEEBC9B00FC20A9 /* Build configuration list for PBXNativeTarget "AUSome Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2800C51DEEBC9B00FC20A9 /* Debug */,
+				2C2800C61DEEBC9B00FC20A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C2800C71DEEBC9B00FC20A9 /* Build configuration list for PBXNativeTarget "AUSome TrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2800C81DEEBC9B00FC20A9 /* Debug */,
+				2C2800C91DEEBC9B00FC20A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C2800CA1DEEBC9B00FC20A9 /* Build configuration list for PBXNativeTarget "AUSome TrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2800CB1DEEBC9B00FC20A9 /* Debug */,
+				2C2800CC1DEEBC9B00FC20A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C2800941DEEBC9B00FC20A9 /* Project object */;
+}
