@@ -14,6 +14,10 @@
 		2C2800AA1DEEBC9B00FC20A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2800A81DEEBC9B00FC20A9 /* LaunchScreen.storyboard */; };
 		2C2800B51DEEBC9B00FC20A9 /* AUSome_TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800B41DEEBC9B00FC20A9 /* AUSome_TrackingTests.swift */; };
 		2C2800C01DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800BF1DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift */; };
+		2C2800CE1DEEC0A000FC20A9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800CD1DEEC0A000FC20A9 /* SwiftyJSON.swift */; };
+		2C2800D01DEEC73A00FC20A9 /* TrackingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800CF1DEEC73A00FC20A9 /* TrackingScene.swift */; };
+		2C2800D21DEFE4E100FC20A9 /* TrackingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800D11DEFE4E100FC20A9 /* TrackingInfo.swift */; };
+		2C2800D41DF0463B00FC20A9 /* popOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2800D31DF0463B00FC20A9 /* popOver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		2C2800BB1DEEBC9B00FC20A9 /* AUSome TrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AUSome TrackingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2800BF1DEEBC9B00FC20A9 /* AUSome_TrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUSome_TrackingUITests.swift; sourceTree = "<group>"; };
 		2C2800C11DEEBC9B00FC20A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2800CD1DEEC0A000FC20A9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		2C2800CF1DEEC73A00FC20A9 /* TrackingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingScene.swift; sourceTree = "<group>"; };
+		2C2800D11DEFE4E100FC20A9 /* TrackingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingInfo.swift; sourceTree = "<group>"; };
+		2C2800D31DF0463B00FC20A9 /* popOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popOver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				2C28009F1DEEBC9B00FC20A9 /* AppDelegate.swift */,
 				2C2800A11DEEBC9B00FC20A9 /* ViewController.swift */,
 				2C2800A31DEEBC9B00FC20A9 /* Main.storyboard */,
+				2C2800CF1DEEC73A00FC20A9 /* TrackingScene.swift */,
+				2C2800D31DF0463B00FC20A9 /* popOver.swift */,
+				2C2800D11DEFE4E100FC20A9 /* TrackingInfo.swift */,
+				2C2800CD1DEEC0A000FC20A9 /* SwiftyJSON.swift */,
 				2C2800A61DEEBC9B00FC20A9 /* Assets.xcassets */,
 				2C2800A81DEEBC9B00FC20A9 /* LaunchScreen.storyboard */,
 				2C2800AB1DEEBC9B00FC20A9 /* Info.plist */,
@@ -262,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2800D01DEEC73A00FC20A9 /* TrackingScene.swift in Sources */,
 				2C2800A21DEEBC9B00FC20A9 /* ViewController.swift in Sources */,
+				2C2800CE1DEEC0A000FC20A9 /* SwiftyJSON.swift in Sources */,
+				2C2800D21DEFE4E100FC20A9 /* TrackingInfo.swift in Sources */,
 				2C2800A01DEEBC9B00FC20A9 /* AppDelegate.swift in Sources */,
+				2C2800D41DF0463B00FC20A9 /* popOver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
