@@ -11,7 +11,7 @@ import UIKit
 class popOver: UIViewController {
     
     var dotId: String! = ""
-    var dotDict: [String: Int] = ["ip1Pop": 1, "ip2Pop": 2, "ip3Pop": 3, "ip4Pop": 4, "ip5Pop": 5]
+    var dotDict: [String: Int] = ["ip1Pop": 0, "ip2Pop": 1, "ip3Pop": 2, "ip4Pop": 3, "ip5Pop": 4]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,25 +77,7 @@ class popOver: UIViewController {
         let estimates = json["estimates"].arrayValue
         
         let tag = 1000
-//        for i in 0..<json["refs"].count {
-//            tag = i * 10 + 10
-//            if let label = views[i].viewWithTag(tag + 1) as? UILabel {
-//                label.text = refs[i]["addr"].stringValue
-//            }
-//            if let label = views[i].viewWithTag(tag + 2) as? UILabel {
-//                let x = refs[i]["x"].stringValue
-//                let y = refs[i]["y"].stringValue
-//                
-//                label.text = "x: " + x + ", y: " + y
-//            }
-//        }
-//        
-//        for i in 0..<json["estimates"].count {
-//            tag = i * 10 + 10
-//            if let label = views[i].viewWithTag(tag + 3) as? UILabel {
-//                label.text = String(estimates[i]["duration"].doubleValue / 1000.0) + " seconds"
-//            }
-//        }
+
         if let label = self.view.viewWithTag(tag + 1) as? UILabel {
             label.text = refs[dotNumber]["addr"].stringValue
         }
@@ -107,11 +89,11 @@ class popOver: UIViewController {
         }
         
         if let label = self.view.viewWithTag(tag + 3) as? UILabel {
-            label.text = String(estimates[dotNumber]["duration"].doubleValue / 1000.0) + "seconds"
+            label.text = String(estimates[dotNumber]["duration"].doubleValue / 1000.0) + " seconds"
         }
         
         if let label = self.view.viewWithTag(tag + 4) as? UILabel {
-            label.text = "#" + String(dotNumber)
+            label.text = "#" + String(dotNumber + 1)
         }
     }
 

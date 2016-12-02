@@ -10,16 +10,32 @@ import UIKit
 
 class TrackingScene: UIViewController, UIPopoverPresentationControllerDelegate {
 
-    var xp1 = 30
-    var yp1 = 30
+    struct Size {
+        static let Width = 59.0
+        static let Height = 59.0
+    }
     
-    @IBOutlet weak var buttonIp1: UIButton!
+    @IBOutlet var buttons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        self.buttonIp1Init()
+        //self.buttonIp1Init()
+        //self.buttonIp2Init()
+        //definesPresentationContext = true
         
+        let data = self.dataFileData()
+        //let test: String! = ""
+        if (data as Any) is Data {
+            for i in 0..<self.buttons.count {
+                let rawPosition = self.getRawPosition(tag: self.buttons[i].tag, data: data!)
+                self.buttonIpInit(buttonIp: self.buttons[i], x: rawPosition.0, y: rawPosition.1)
+            }
+        } else {
+            let controller = UIAlertController(title: "Alert", message: "Data type ERROR!", preferredStyle: UIAlertControllerStyle.alert)
+            controller.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(controller, animated: true, completion: nil)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,7 +44,11 @@ class TrackingScene: UIViewController, UIPopoverPresentationControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.dotAnimate(ipButton: buttonIp1)
+        //self.dotAnimate(ipButton: buttonIp1)
+        //self.dotAnimate(ipButton: buttonIp2)
+        for i in 0..<self.buttons.count {
+            self.dotAnimate(ipButton: self.buttons[i])
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,55 +57,98 @@ class TrackingScene: UIViewController, UIPopoverPresentationControllerDelegate {
     }
     
 
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "ip1Pop"{
+        if segue.identifier == "ip1Pop" ||
+           segue.identifier == "ip2Pop" ||
+           segue.identifier == "ip3Pop" ||
+           segue.identifier == "ip4Pop" ||
+           segue.identifier == "ip5Pop" {
             let popoverViewController = segue.destination as! popOver
             popoverViewController.dotId = segue.identifier
             popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
             popoverViewController.popoverPresentationController!.delegate = self
         }
     }
- 
     
-    func buttonIp1Init() {
-        buttonIp1.isHidden = false
-        buttonIp1.frame = CGRect(x: xp1, y:yp1, width:15, height:15)
-        buttonIp1.layer.cornerRadius = 0.5 * buttonIp1.bounds.size.width
-        buttonIp1.clipsToBounds = true
-        buttonIp1.layer.backgroundColor = UIColor.blue.cgColor
-        buttonIp1.setTitle("1", for: .normal)
-        buttonIp1.titleLabel!.font = UIFont(name: "Helvetica", size: 10)
-        buttonIp1.alpha = 1.0
-        Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(ip1ChangePosition), userInfo: nil, repeats: true)
+    func buttonIpInit(buttonIp: UIButton, x: Int, y:Int) {
+        buttonIp.isHidden = false
+        let position = self.calculatePositon(x: x, y: y)
         
-        buttonIp1.addTarget(self, action: #selector(buttoniP1Pressed(_:)), for: .touchUpInside)
+        buttonIp.frame = CGRect(x: position.0, y: position.1, width:15, height:15)
+        buttonIp.layer.cornerRadius = 0.5 * buttonIp.bounds.size.width
+        buttonIp.clipsToBounds = true
+        buttonIp.layer.backgroundColor = UIColor.blue.cgColor
+        buttonIp.setTitle(String(buttonIp.tag), for: .normal)
+        buttonIp.titleLabel!.font = UIFont(name: "Helvetica", size: 10)
+        buttonIp.alpha = 1.0
+    
     }
     
-    func ip1ChangePosition() {
-        xp1 += 5
-        yp1 += 5
-        self.buttonIp1.frame = CGRect(x: xp1, y:yp1, width:15, height:15)
+    func calculatePositon(x: Int, y: Int) -> (Double, Double) {
+        let xp = Double(x)/Size.Width * Double(UIScreen.main.bounds.width)
+        let yp = Double(y)/Size.Height * Double(UIScreen.main.bounds.height)
+        
+        return(xp, yp)
     }
+    
+//    func ip1ChangePosition() {
+//        xp1 += 5
+//        yp1 += 5
+//        self.buttonIp1.frame = CGRect(x: xp1, y:yp1, width:15, height:15)
+//    }
     
     func dotAnimate(ipButton: UIButton) {
         self.view.layoutIfNeeded()
         UIView.animate(withDuration: 0.5, delay: 0, options:
             [.curveEaseInOut, .repeat, .autoreverse, .allowUserInteraction],
-                       animations: {() -> Void in ipButton.alpha = 0.5
+                       animations: {() -> Void in ipButton.alpha = 0.3
                         self.view.layoutIfNeeded()},
                        completion: {(finished: Bool) -> Void in})
     }
     
-    func buttoniP1Pressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "ip1Pop", sender: self)
+//    func buttonIp1Pressed(_ sender: Any) {
+//        self.performSegue(withIdentifier: "ip1Pop", sender: self)
+//    }
+    
+    
+    func dataFileURL() -> NSURL {
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentUrl = urls.first
+        return documentUrl!.appendingPathComponent("config.json") as NSURL
     }
     
+    func dataFileData() -> Data? {
+        var jsonData: NSData? = nil
+        var nsString: String? = nil
+        let fileURL = self.dataFileURL()
+        if (FileManager.default.fileExists(atPath: fileURL.path!)) {
+            //print(fileURL)
+            //let ccc = try! String(contentsOf: fileURL as URL)
+            //print(ccc)
+            jsonData = NSData(contentsOf: fileURL as URL)
+            nsString = NSString(data: jsonData as! Data, encoding: String.Encoding.utf8.rawValue) as? String
+        }
+        
+        if let data = nsString?.data(using: String.Encoding.utf8) {
+            return data
+        }
+        
+        return nil
+    }
+    
+    func getRawPosition(tag: Int, data: Data) -> (Int, Int) {
+        let json = JSON(data: data)
+        let refs = json["refs"].arrayValue
+        
+        let rawPosition = (refs[tag - 1]["x"].int!, refs[tag - 1]["y"].int!)
+        
+        return rawPosition
+    }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.none
